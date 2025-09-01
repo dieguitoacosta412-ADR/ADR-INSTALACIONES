@@ -1,0 +1,169 @@
+:root {
+  /* colors */
+  --texto-primario: #ddd;
+  --texto-secundario: #d1d1d1;
+  --fondo-primario: #0f0921;
+  --fondo-primario-transparente: #0f092180;
+  --fondo-secundario: #0a0c13;
+  --color-primario: #2c2acb;
+  --color-primario-apagado: #2422a3;
+  --color-secundario: #9b70f9;
+  --color-terciario: #6f6f6f;
+
+  /* sizes */
+  --presentacion-titulo-tamanio: 4rem;
+  --presentacion-titulo-tamanio-grande: 3.4rem;
+  --presentacion-descripcion-tamanio: 1.2rem;
+  --titulo-tamanio: 3rem;
+  --sub-titulo-tamanio: 2rem;
+  --texto-tamanio: 1.1rem;
+  --enlaces-tamanio: 1.2rem;
+  --texto-peso-grueso: 700;
+  --texto-peso-regular: 400;
+  --texto-peso-fino: 300;
+}
+
+/* estilos generales */
+* {
+  /* normalizador */
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  /* generales */
+  color: var(--texto-primario);
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+html {
+  background-color: var(--fondo-primario);
+}
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+/*aqui comienza el estilo de la pagina*/
+
+/*encavezado*/
+.encavezado{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.navegacion {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+}
+
+
+.navegacion {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+}
+.navegacion__enlace {
+  text-decoration: none;
+}
+#imagen_logo{
+    height: 100px;
+    width: 180px;
+    justify-content: center;
+    margin-left: 10px;
+}
+.navegacion__titulo {
+  font-size: var(--titulo-tamanio);
+  text-shadow: 2px 2px 2px var(--fondo-secundario);
+}
+
+/*main*/
+#inicio{
+
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+
+}
+#servicios{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin:auto;
+}
+#imagen1{
+    height: 120px;
+    width: 100px;
+}
+#imagen2{
+    height: 120px;
+    width: 120px;
+}
+#imagen26{
+    height: 120px;
+    width: 120px;
+}
+#imagen25{
+    height: 120px;
+    width: 120px;
+}
+#imagen3{
+    height: 120px;
+    height: 120px;
+}
+#imagen34{
+    height: 120px;
+    width: 120px;
+
+}
+
+#contacto{
+
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+
+}
+
+/* =======================================
+   Botón de WhatsApp Flotante
+   ======================================= */
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
